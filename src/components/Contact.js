@@ -78,7 +78,7 @@ const Contact = () => {
             >
               <FaEnvelope className="text-white" />
               <a
-                href="mailto:talakolavijaykumar@gmail.com"
+                href="mailto:boopathisiva990@gmail.com"
                 className="text-white md:text-lg"
               >
                 boopathisiva990@gamil.com.com
