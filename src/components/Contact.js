@@ -6,6 +6,7 @@ import SocialHandles from "./SocialHandles";
 
 const Contact = () => {
   const formRef = useRef();
+
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
@@ -21,14 +22,14 @@ const Contact = () => {
           e.target.reset();
         },
         (error) => {
-          console.log(error.text);
+          console.error(error.text);
           toast.error("Unable to send message!");
         }
       );
   };
 
   return (
-    <section className="text-gray-600 body-font ">
+    <section className="text-gray-600 body-font">
       <div className="px-3 py-5 mx-auto text-center md:mt-7 sm:mx-7 md:mx-12 lg:mx-32 xl:mx-56">
         <div id="contact" className="flex flex-col text-center w-full mb-4">
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-2 text-black">
@@ -38,7 +39,7 @@ const Contact = () => {
             data-aos="zoom-in"
             data-aos-duration="1000"
             data-aos-once="false"
-            className="text-lg font-medium leading-relaxed text-dark-orange "
+            className="text-lg font-medium leading-relaxed text-dark-orange"
           >
             Let's keep in touch
           </p>
@@ -68,7 +69,7 @@ const Contact = () => {
               className="flex gap-3 items-center mb-4 md:gap-2 lg:gap-5"
             >
               <FaPhoneAlt className="text-white" />
-              <p className="text-white md:text-lg ">+91 63699735</p>
+              <p className="text-white md:text-lg">+91 63699735</p>
             </div>
             <div
               data-aos="fade-right"
@@ -92,7 +93,7 @@ const Contact = () => {
             >
               <FaMapMarkerAlt className="text-white" />
               <p className="leading-normal text-start text-white md:text-lg">
-                tiruvannamalai , Tamil Nadu , India
+                Tiruvannamalai, Tamil Nadu, India
               </p>
             </div>
           </div>
@@ -112,6 +113,7 @@ const Contact = () => {
             >
               <input
                 required
+                aria-label="Name"
                 placeholder="Name"
                 type="text"
                 name="user_name"
@@ -126,6 +128,7 @@ const Contact = () => {
             >
               <input
                 required
+                aria-label="Email"
                 placeholder="Email"
                 type="email"
                 name="user_email"
@@ -140,6 +143,7 @@ const Contact = () => {
             >
               <textarea
                 required
+                aria-label="Message"
                 placeholder="Message"
                 name="message"
                 className="mb-1 w-full bg-white rounded-md border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-black p-2 resize-none leading-6 transition-colors duration-200 ease-in-out"
@@ -151,7 +155,7 @@ const Contact = () => {
               data-aos-once="false"
               className="p-2 w-full"
             >
-              <button className=" font-medium mx-auto my-3 text-white bg-dark-orange border-0 py-2 px-12 focus:outline-none hover:scale-110 hover:bg-orange-600 transition duration-500 rounded-xl text-lg">
+              <button className="font-medium mx-auto my-3 text-white bg-dark-orange border-0 py-2 px-12 focus:outline-none hover:scale-110 hover:bg-orange-600 transition duration-500 rounded-xl text-lg">
                 Send
               </button>
             </div>
