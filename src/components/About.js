@@ -24,7 +24,7 @@ const About = () => {
             data-aos-duration="1000"
             data-aos-once="false"
             className="lg:max-w-lg sm:w-2/3 lg:w-1/2 w-full mb-10 md:mb-0"
-          >           
+          >
             <img
               className="object-cover object-center pointer-events-none rounded backdrop-contrast-200 backdrop-brightness-200"
               alt="hero"
