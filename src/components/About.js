@@ -24,7 +24,7 @@ const About = () => {
             data-aos-duration="1000"
             data-aos-once="false"
             className="lg:max-w-lg sm:w-2/3 lg:w-1/2 w-full mb-10 md:mb-0"
-          >
+          >           
             <img
               className="object-cover object-center pointer-events-none rounded backdrop-contrast-200 backdrop-brightness-200"
               alt="hero"
@@ -40,11 +40,11 @@ const About = () => {
             >
               A passionate and dedicated web developer with a strong background
               in creating visually stunning and highly functional websites with
-              2 years of experience in the field. <br />
+              1 years of experience in the field. <br />
               <br /> Throughout my career, I have developed proficiency in
               various web technologies including HTML5 , CSS3 , JavaScript. I am
               well-versed in popular libraries such as React and frameworks like
-              Next ,Tailwind allowing me to build robust and responsive
+              Express Js ,Tailwind allowing me to build robust and responsive
               websites. <br /> <br /> I'm excited to take on new challenges and
               contribute to innovative projects. Feel free to connect with me
               through my social media links.

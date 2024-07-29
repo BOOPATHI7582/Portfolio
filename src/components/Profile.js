@@ -4,6 +4,16 @@ import { Link } from "react-scroll";
 import SocialHandles from "./SocialHandles";
 
 const Profile = () => {
+  const onButtonClick = () => {
+    const pdfUrl = process.env.PUBLIC_URL;
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "BOOPATHI_resume.pdf"; // specify the filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section className="text-gray-600 body-font pt-16 lg:min-h-75vh">
       <div className="p-5 mx-auto gap-2 flex flex-col md:pt-12 md:px-7 lg:py-20 lg:flex-row-reverse items-center min-h-fit">
@@ -16,7 +26,7 @@ const Profile = () => {
           <img
             className="object-cover object-center bg-[#b9aeb6] border-2 border-white pointer-events-none rounded-full backdrop-contrast-200 backdrop-brightness-200"
             alt="Vijay"
-            src={require("../assets/Images/hero.png")}
+            src={require("../assets/Images/1721634999567 (1).jpg")}
           />
         </div>
         <div className="lg:flex-grow lg:pr-4 lg:mr-14 flex flex-col md:mb-0 items-center text-center xl:scale-105">
@@ -27,7 +37,7 @@ const Profile = () => {
             data-aos-once="false"
             className="title-font md:text-3xl text-2xl mb-4 text-center font-medium text-white"
           >
-            Hello , I am <span className="text-dark-orange">Vijay Kumar</span>
+            Hello, I am <span className="text-dark-orange">Boopathi</span>
           </h2>
           <div
             data-aos="zoom-in-up"
@@ -37,7 +47,7 @@ const Profile = () => {
           >
             &nbsp;
             <Typewriter
-              words={["Web Developer", "Free Lancer", "Enthusiastic Dev"]}
+              words={["Web Developer", "free Lancer", "Enthusiastic Dev"]}
               loop={false}
               typeSpeed={100}
               deleteSpeed={100}
@@ -77,12 +87,12 @@ const Profile = () => {
                 Hire Me
               </Link>
             </button>
-            <a
-              href="https://drive.google.com/drive/u/1/folders/1VLbE3u0gC3x66ClPWCUmcK75DuhTAyKx"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <button className="inline-flex font-medium text-white bg-dark-orange border-2 border-dark-orange py-3 px-7 focus:outline-none hover:bg-cornsilk hover:border-dark-orange hover:text-black rounded-full text-md xl:px-10">
+
+            <a href="../assets/Images/BOOPATHI (2).pdf" download>
+              <button
+                className="inline-flex font-medium text-white bg-dark-orange border-2 border-dark-orange py-3 px-7 focus:outline-none hover:bg-cornsilk hover:border-dark-orange hover:text-black rounded-full text-md xl:px-10"
+                onClick={onButtonClick}
+              >
                 Get Resume
               </button>
             </a>
@@ -103,27 +113,27 @@ const Profile = () => {
               d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18v44h-352z"
             />
           </defs>
-          <g class="waves">
+          <g className="waves">
             <use
               xlinkHref="#gentle-wave"
               x="50"
               y="0"
               fill="#f5f5f5"
-              fill-opacity=".2"
+              fillOpacity=".2"
             />
             <use
               xlinkHref="#gentle-wave"
               x="50"
               y="3"
               fill="#f5f5f5"
-              fill-opacity=".5"
+              fillOpacity=".5"
             />
             <use
               xlinkHref="#gentle-wave"
               x="50"
               y="6"
               fill="#f5f5f5"
-              fill-opacity=".9"
+              fillOpacity=".9"
             />
           </g>
         </svg>

@@ -1,8 +1,9 @@
 import React from "react";
-import Atoms from '../assets/Images/atoms.png'
+// import Atoms from '../assets/Images/atoms.png'
 const  Experience = () => {
-
+ const why ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSzgp5iHNv_a_QbzknQQtLlPznnaRe6-watZsVl6OEVyLOu5Bb4yGUMTPDa8GhtpEO&usqp=CAU"
   return (
+
     <section className="py-3 px-3 bg-white mt-4 md:mt-7">
       <div className="mx-auto max-w-xl">
         <div id="experience" className="flex flex-col text-center mb-4 w-full ">
@@ -19,10 +20,14 @@ const  Experience = () => {
               Full Stack Developer Intern
             </h1>
             <div className="flex items-center justify-center gap-3 text-lg text-gray-700 md:text-xl">
-             <img src={Atoms} alt="Atoms Digital Solution" className="h-10 w-10 lg:h-16 scale-y-150 lg:w-20 bg-transparent mix-blend-multiply" /> Atoms Digital Solutions
+             <img src={why} alt="Atoms Digital Solution" className="h-16 w-18 lg:h-12 scale-y-150 lg:w-20 bg-transparent mix-blend-multiply" /> 
+             <a
+             href="https://whyglobalservices.com/">
+                WHY Global Services
+             </a>
             </div>
             <p className="text-base md:text-base text-gray-500">
-              March , 2023 - Present
+              February , 2024 - Present
             </p>
           </div>
           <div className="flex w-fit mx-auto">
